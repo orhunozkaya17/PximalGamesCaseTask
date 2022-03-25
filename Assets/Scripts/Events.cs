@@ -7,17 +7,14 @@ using System;
 public static class Events
 {
     public static event Action gameStart;
-    public static event Action gameStarted;
+
     public static event Action FinalScene;
     public static event Action GameOver;
     public static void CallGameStart()
     {
         gameStart?.Invoke();
     }
-    public static void CallGameStarted()
-    {
-        gameStarted?.Invoke();
-    }
+ 
     public static void CallFinalScene()
     {
         FinalScene?.Invoke();
